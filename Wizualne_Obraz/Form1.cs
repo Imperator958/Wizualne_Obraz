@@ -29,16 +29,14 @@ namespace Wizualne_Obraz
         private void button3_Click(object sender, EventArgs e)
         {
             int i, j;
-            for(i = 0; i < image.Width; i++)
+            for (i = 0; i < image.Width; i++)
             {
-                for(j = 0; j < image.Height; j++)
+                for (j = 0; j < image.Height; j++)
                 {
-                    Color pixel = image.GetPixel(i,j);
-                    Color color = Color.FromArgb(0, pixel.G, 0);
-                    image.SetPixel(i,j, color);
+                    Color pixel = image.GetPixel(i, j);
+                    image.SetPixel(i, j, DisplayGreen(pixel,50));
                 }
             }
-
             pictureBox1.Image = image;
         }
 
@@ -56,6 +54,17 @@ namespace Wizualne_Obraz
             }
 
             pictureBox1.Image = image;
+        }
+
+        private Color DisplayGreen(Color c, int range)
+        {
+            float C = c.GetHue();
+            float e = 1.5f * range;
+            float G = Color.Green.GetHue();
+            float delta = C - G;
+            bool Ok = (Math.Abs(delta) < e);
+
+            return Ok ? c : Color.White;
         }
     }
 }
