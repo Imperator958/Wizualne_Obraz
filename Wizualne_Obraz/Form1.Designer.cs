@@ -64,7 +64,7 @@
             this.button2.TabIndex = 2;
             this.button2.Text = "NEGATYW";
             this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.button2.Click += new System.EventHandler(this.Negative_Click);
             // 
             // button3
             // 
@@ -75,7 +75,7 @@
             this.button3.TabIndex = 3;
             this.button3.Text = "ZIELONY!!!";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.All_green_pixels_Click);
             // 
             // Form1
             // 

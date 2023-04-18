@@ -26,7 +26,7 @@ namespace Wizualne_Obraz
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void All_green_pixels_Click(object sender, EventArgs e)
         {
             int i, j;
             for (i = 0; i < image.Width; i++)
@@ -40,7 +40,7 @@ namespace Wizualne_Obraz
             pictureBox1.Image = image;
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Negative_Click(object sender, EventArgs e)
         {
             int i, j;
             for (i = 0; i < image.Width; i++)
