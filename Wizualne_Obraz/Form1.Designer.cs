@@ -30,6 +30,8 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.Negatyw = new System.Windows.Forms.Button();
+            this.Zielony = new System.Windows.Forms.Button();
             this.OBRÓT = new System.Windows.Forms.Button();
             this.ODBICIE_LUSTRZANE_I = new System.Windows.Forms.Button();
             this.ODBICIE_LUSTRZANE_II = new System.Windows.Forms.Button();
@@ -89,11 +91,35 @@
             this.ODBICIE_LUSTRZANE_II.UseVisualStyleBackColor = true;
             this.ODBICIE_LUSTRZANE_II.Click += new System.EventHandler(this.mirror_reflection_Click);
             // 
+            // Negatyw
+            // 
+            this.Negatyw.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Negatyw.Location = new System.Drawing.Point(602, 114);
+            this.Negatyw.Name = "Negatyw";
+            this.Negatyw.Size = new System.Drawing.Size(148, 68);
+            this.Negatyw.TabIndex = 2;
+            this.Negatyw.Text = "NEGATYW";
+            this.Negatyw.UseVisualStyleBackColor = true;
+            this.Negatyw.Click += new System.EventHandler(this.Negative_Click);
+            // 
+            // Zielony
+            // 
+            this.Zielony.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Zielony.Location = new System.Drawing.Point(602, 28);
+            this.Zielony.Name = "Zielony";
+            this.Zielony.Size = new System.Drawing.Size(148, 68);
+            this.Zielony.TabIndex = 3;
+            this.Zielony.Text = "ZIELONY!!!";
+            this.Zielony.UseVisualStyleBackColor = true;
+            this.Zielony.Click += new System.EventHandler(this.All_green_pixels_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Zielony);
+            this.Controls.Add(this.Negatyw);
             this.Controls.Add(this.ODBICIE_LUSTRZANE_II);
             this.Controls.Add(this.ODBICIE_LUSTRZANE_I);
             this.Controls.Add(this.OBRÓT);
@@ -113,5 +139,7 @@
         private Button OBRÓT;
         private Button ODBICIE_LUSTRZANE_I;
         private Button ODBICIE_LUSTRZANE_II;
+        private Button Negatyw;
+        private Button Zielony;
     }
 }
