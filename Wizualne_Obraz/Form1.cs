@@ -26,21 +26,21 @@ namespace Wizualne_Obraz
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void move_by_90_degree_Click(object sender, EventArgs e)
         {
             if(image != null)
             {
-                int W;
+                int Width;
                 image.RotateFlip(RotateFlipType.Rotate90FlipNone);
-                W = pictureBox1.Width;
+                Width = pictureBox1.Width;
                 pictureBox1.Width = pictureBox1.Height;
-                pictureBox1.Height = W;
+                pictureBox1.Height = Width;
                 pictureBox1.Image = image;
                 
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void mirror_reflection_I_Click(object sender, EventArgs e)
         {
             if(image != null)
             {
@@ -49,7 +49,7 @@ namespace Wizualne_Obraz
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void mirror_reflection_Click(object sender, EventArgs e)
         {
             if(image != null)
             {

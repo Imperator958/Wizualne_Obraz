@@ -30,9 +30,9 @@
         {
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.OBRÓT = new System.Windows.Forms.Button();
+            this.ODBICIE_LUSTRZANE_I = new System.Windows.Forms.Button();
+            this.ODBICIE_LUSTRZANE_II = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,47 +56,47 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // OBRÓT
             // 
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button2.Location = new System.Drawing.Point(599, 181);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 68);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "OBRÓT O 90";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.OBRÓT.Font = new System.Drawing.Font("Segoe UI", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.OBRÓT.Location = new System.Drawing.Point(599, 181);
+            this.OBRÓT.Name = "OBRÓT";
+            this.OBRÓT.Size = new System.Drawing.Size(148, 68);
+            this.OBRÓT.TabIndex = 2;
+            this.OBRÓT.Text = "OBRÓT O 90";
+            this.OBRÓT.UseVisualStyleBackColor = true;
+            this.OBRÓT.Click += new System.EventHandler(this.move_by_90_degree_Click);
             // 
-            // button3
+            // ODBICIE_LUSTRZANE_I
             // 
-            this.button3.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button3.Location = new System.Drawing.Point(599, 266);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(148, 68);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "ODBICIE LUSTRZANE II";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.ODBICIE_LUSTRZANE_I.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ODBICIE_LUSTRZANE_I.Location = new System.Drawing.Point(599, 266);
+            this.ODBICIE_LUSTRZANE_I.Name = "ODBICIE_LUSTRZANE_I";
+            this.ODBICIE_LUSTRZANE_I.Size = new System.Drawing.Size(148, 68);
+            this.ODBICIE_LUSTRZANE_I.TabIndex = 3;
+            this.ODBICIE_LUSTRZANE_I.Text = "ODBICIE LUSTRZANE II";
+            this.ODBICIE_LUSTRZANE_I.UseVisualStyleBackColor = true;
+            this.ODBICIE_LUSTRZANE_I.Click += new System.EventHandler(this.mirror_reflection_I_Click);
             // 
-            // button4
+            // ODBICIE_LUSTRZANE_II
             // 
-            this.button4.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button4.Location = new System.Drawing.Point(599, 350);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(148, 68);
-            this.button4.TabIndex = 4;
-            this.button4.Text = "ODBICIE LUSTRZANE II";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.ODBICIE_LUSTRZANE_II.Font = new System.Drawing.Font("Segoe UI", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ODBICIE_LUSTRZANE_II.Location = new System.Drawing.Point(599, 350);
+            this.ODBICIE_LUSTRZANE_II.Name = "ODBICIE_LUSTRZANE_II";
+            this.ODBICIE_LUSTRZANE_II.Size = new System.Drawing.Size(148, 68);
+            this.ODBICIE_LUSTRZANE_II.TabIndex = 4;
+            this.ODBICIE_LUSTRZANE_II.Text = "ODBICIE LUSTRZANE II";
+            this.ODBICIE_LUSTRZANE_II.UseVisualStyleBackColor = true;
+            this.ODBICIE_LUSTRZANE_II.Click += new System.EventHandler(this.mirror_reflection_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.ODBICIE_LUSTRZANE_II);
+            this.Controls.Add(this.ODBICIE_LUSTRZANE_I);
+            this.Controls.Add(this.OBRÓT);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Form1";
@@ -110,8 +110,8 @@
 
         private PictureBox pictureBox1;
         private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
+        private Button OBRÓT;
+        private Button ODBICIE_LUSTRZANE_I;
+        private Button ODBICIE_LUSTRZANE_II;
     }
 }
